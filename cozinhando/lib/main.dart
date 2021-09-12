@@ -11,20 +11,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.deepOrange,
         ),
         home: Scaffold(
-            body: Center(
-                child: Text('Cozinhando em casa')
+            body:
+            SizedBox(
+              height: 400,
+              child: Card(
+                  child: Column(
+                    children: <Widget>[
+                      Image.network('https://blogdaflaviana.com.br/wp-content/uploads/2016/01/Baixar-Imagens-de-Bolo.jpg'),
+                      Text('Bolo de laranja')
+                    ],
+                  )
+              ),
             ),
             appBar: AppBar(title: Text('Cozinhando em casa')),
         )
