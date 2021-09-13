@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './telas/home/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,21 +14,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.deepOrange,
         ),
-        home: Scaffold(
-            body:
-            SizedBox(
-              height: 400,
-              child: Card(
-                  child: Column(
-                    children: <Widget>[
-                      Image.network('https://blogdaflaviana.com.br/wp-content/uploads/2016/01/Baixar-Imagens-de-Bolo.jpg'),
-                      Text('Bolo de laranja')
-                    ],
-                  )
-              ),
-            ),
-            appBar: AppBar(title: Text('Cozinhando em casa')),
-        )
+        home: Home()
     );
   }
 }
+
